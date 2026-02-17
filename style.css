@@ -642,3 +642,56 @@ nav ul li a:hover {
     color: #1f3c88 !important;
     border-radius: 6px;
 }
+
+/* ===============================
+   FINAL STABLE NAVBAR (NO BUG)
+================================ */
+
+/* Force clean container */
+nav {
+    background-color: #1f3c88;
+    padding: 6px 0;
+}
+
+/* Use grid instead of flex */
+nav ul {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+    justify-content: center;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu items */
+nav ul li {
+    text-align: center;
+}
+
+/* Links */
+nav ul li a {
+    display: block;
+    padding: 10px 12px;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    white-space: normal;   /* allow wrap */
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+}
+
+header {
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
