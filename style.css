@@ -589,3 +589,56 @@ nav ul li a:link,
 nav ul li a:visited {
     color: #ffffff !important;
 }
+
+/* ===== FINAL NAVBAR LAYOUT FIX ===== */
+
+/* Prevent unwanted wrapping gap */
+nav ul {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+}
+
+/* Remove any empty space / ghost box */
+nav ul::after {
+    content: none !important;
+}
+
+/* Ensure no empty flex items */
+nav ul li {
+    white-space: nowrap;
+}
+
+/* Hide scrollbar (optional but clean) */
+nav ul::-webkit-scrollbar {
+    display: none;
+}
+
+/* ===== ABSOLUTE FINAL NAV FIX ===== */
+
+/* Remove flex completely */
+nav ul {
+    display: block !important;
+    text-align: center;
+}
+
+/* Make menu items inline */
+nav ul li {
+    display: inline-block !important;
+    margin: 0;
+}
+
+/* Link styling */
+nav ul li a {
+    display: inline-block;
+    padding: 12px 16px;
+    color: #ffffff !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hover */
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #1f3c88 !important;
+    border-radius: 6px;
+}
