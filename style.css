@@ -695,3 +695,117 @@ header p {
     font-size: 16px;
 }
 
+/* ===============================
+   PAGE NAVIGATION BUTTONS
+================================ */
+
+button {
+    background-color: #1f3c88;
+    border: none;
+    border-radius: 6px;
+    margin: 15px 8px;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+/* Anchor inside button */
+button a {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #ffffff;
+    border: 1px solid #1f3c88;
+}
+
+button:hover a {
+    color: #1f3c88;
+}
+
+/* Center alignment */
+button {
+    cursor: pointer;
+}
+
+/* Mobile friendly */
+@media (max-width: 600px) {
+    button a {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+}
+
+
+button {
+    display: inline-block;
+}
+
+button:nth-of-type(1) {
+    float: left;
+}
+
+button:nth-of-type(2) {
+    display: block;
+    margin: 20px auto;
+}
+
+button:nth-of-type(3) {
+    float: right;
+}
+
+
+/* ===============================
+   ARROW NAV BUTTON STYLE
+================================ */
+
+.page-nav {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* Left, center, right alignment */
+.page-nav button:first-child {
+    justify-self: start;
+}
+
+.page-nav button:nth-child(2) {
+    justify-self: center;
+}
+
+.page-nav button:last-child {
+    justify-self: end;
+}
+
+/* Smooth arrow spacing */
+.page-nav button a {
+    letter-spacing: 0.3px;
+}
+
+
+/* ===============================
+   MOBILE BUTTON STACK (NO HTML CHANGE)
+================================ */
+
+@media (max-width: 600px) {
+
+    button {
+        display: block;
+        width: 100%;
+        max-width: 260px;
+        margin: 10px auto;
+    }
+
+    button a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
